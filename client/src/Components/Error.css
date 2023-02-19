@@ -1,0 +1,31 @@
+  .full-height {
+    height: 80vh;
+    background-color: #dee2f8;
+    color: #394068;
+    font-family: "Muli", sans-serif;
+    font-weight: 100;
+  }
+  
+  .flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .position-r {
+    position: relative;
+  }
+  
+  .code {
+    border-right: 3px solid;
+    font-size: 55px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+  }
+  
+  .message {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px
+  }
+  

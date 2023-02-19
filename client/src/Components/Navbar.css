@@ -1,0 +1,9 @@
+.navbar-brand img{
+    width: 145px;
+    height: 100px;
+}
+
+.nav-item {
+    font-size: large;
+    font-weight: bold;
+}

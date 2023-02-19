@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+section {    
+  height: 100vh;
+  filter: brightness(90%);
+
+  /* scroll */
+  background-attachment: fixed;
+}
+
+/* You need to use background-image but not "background" */
+.graimg{
+  background-image: url('../../Images/s2.jpg');
+  background-size: 100% 100%;
+
+}
+
+section:nth-child(2) {
+  background-image: url('../../Images/h1.jpg');
+  background-size: 100% 100%;
+}
+
+section:nth-child(3) {
+  background-image: url('../../Images/h2.jpg');
+  background-size: 100% 100%;
+}
+.graphite, .marbtext ,.art{
+  text-align: center;
+  color: #06010c ;
+  font-size: 60px;
+  font-weight: 800;
+  /* text-shadow: 1px 1px 2px rgb(255, 255, 255); */
+  /* background: none; */
+  /* margin-left: 20px; */
+  padding-top: 350px;
+  /* margin-left: 120px; */
+}

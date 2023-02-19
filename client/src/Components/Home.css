@@ -1,0 +1,118 @@
+.imgSlider{
+    width: 80%;
+    height: 100%;
+    background-image: url('../Images/1.jpg');
+    background-size: 100% 100%;
+    animation: changeImage 10s linear infinite;
+    place-items: center start;
+}
+
+@keyframes changeImage {
+    0%{
+        background-image: url('../Images/1.jpg');
+    }
+    25%{
+        background-image: url('../Images/10.jpg');
+    }
+    50%{
+        background-image: url('../Images/3.jpg');
+    }
+    75%{
+        background-image: url('../Images/11.jpg');
+    }
+    100%{
+        background-image: url('../Images/12.jpg');
+    }
+}
+
+.body{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    place-items: start center;
+    margin-top: 100px;
+    margin-bottom: 190px;
+}
+
+.bodys{
+    width: 100%;
+    /* height: 100%; */
+    height: 100vh;
+    place-items:center;
+    /* place-items: start center; */
+    /* padding-top: 200px; */
+    /* padding-bottom: 190px; */
+    background-image: url('../Images/s1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.welcome-marble{
+    margin-top: 350px;
+}
+.welcome{
+    font-size: 2cm;
+    font-weight: 400;
+    color: #244a92;
+}
+
+.marble{
+    font-size: 2cm;
+    font-weight: 1000;
+}
+
+.search{
+    /* box-shadow: 0px 0px 2px 2px rgb(131, 122, 122); */
+    /* display: flex; */
+    /* justify-content: around; */
+    align-items: center;
+    margin-top: 100px;
+    /* margin-left: 484px; */
+    /* margin-inline: 300px; */
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    width: fit-content;
+    height: 60px;
+}
+.filter{
+    /* background-color: #334a5a; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.filter-box{
+        border-radius: 25px;
+        border: 1px solid #3a5f96;
+        width: fit-content;
+        align-items: center;
+        padding: 5px;
+}
+.inputcity{
+    outline: none;
+    border-top: #1a1919;
+    border-left: #1a1919;
+    border-bottom: #1a1919;
+}
+
+.property {
+    border: none;
+    outline: none;
+}
+.budget{
+    border: none;
+    outline: none;
+}
+.propdiv{
+    border-left: #1a1919;
+}
+.category{
+    border: none;
+    outline: none;
+}
+.sbtn{
+    /* color: #5192cb; */
+    background-color: #5192cb;
+    border-radius: 19px;
+}
+.sbtn:hover{
+    background-color: #3864b4    ;
+}

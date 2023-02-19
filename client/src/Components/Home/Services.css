@@ -1,0 +1,16 @@
+.our{
+    color: #244a92;
+}
+.marbanime{
+    font-weight: 650;
+    color: #181818;
+}
+.cards{
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-top: 3%;
+    gap: 2%;
+}
+.icon{
+    size: 100px;
+}

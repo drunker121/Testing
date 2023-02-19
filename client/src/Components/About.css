@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Open Sans' , sans-serif; */
+    box-sizing: border-box;
+}
+
+.aboutbg{
+    background-color: #516281;
+}
+.abtxt{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 280%;
+    margin: 40%;
+    color: white;
+}
+.abtxt:hover{
+    color: rgb(15, 21, 29);
+}
+.abtbg{
+    background-image: url('../Images/about.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.cntbg{
+  background-image: url('../Images/contact.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 0;
+}
+.abtmarb{
+    width: 55%;
+    float: right;
+    background-color: #e1e7e7;
+    padding: 150px;
+    border-radius: 30px;
+}
+.cntmarb{
+  width: 55%;
+  float: right;
+  background-color: #e1e7e7;
+  padding: 150px;
+  border-radius: 30px;
+}
+.abtmarb h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+@media screen and(max-width:1200px) {
+    .abtmarb{
+        padding: 80px;
+    }
+}
+
+@media  screen and (max-width:1000px) {
+    .abtbg{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .cntbg{
+      background-size: 100%;
+      padding: 100px 40px;
+  }
+    .abtmarb{
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .abtbg{
+        padding: 0;
+    }
+    .abtbg{
+      padding: 0;
+  }
+    .cntmarb{
+        padding: 60px;
+    }
+}
+.abtinfo{
+    margin: 10%;
+    padding: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: #e1e7e7;
+    border-radius: 30px;
+}
+
+.wrapper {
+    width: 100vw;
+    margin: 0 auto;
+    height: 400px;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .wrapper {
+      height: 700px;
+    }
+  }
+  .content {
+    max-width: 1024px;
+    width: 100%;
+    /* padding: 0 4%; */
+    padding-bottom: 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .content {
+      padding-bottom: 10%;
+      flex-direction: column;
+    }
+  }
+  .abtcard {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 300px;
+    background-color: #38445a;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-size: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .icon {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    background: linear-gradient(90deg, #777e8d 0%, #516281 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+  }
+  
+  .material-icons.md-18 {
+    font-size: 18px;
+  }
+  
+  .material-icons.md-24 {
+    font-size: 24px;
+  }
+  
+  .material-icons.md-36 {
+    font-size: 36px;
+  }
+  
+  .material-icons.md-48 {
+    font-size: 48px;
+  }
+  
+  .abtcard .title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  .abtcard .text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .abtcard:hover {
+    height: 350px;
+  }
+  
+  .abtcard:hover .info {
+    height: 90%;
+  }
+  
+  .abtcard:hover .text {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 40px;
+  }
+  
+  .abtcard:hover .icon {
+    background-position: -120px;
+    transition: all 0.3s ease;
+  }
+  
+  .abtcard:hover .icon i {
+    background: linear-gradient(90deg, #FF7E7E, #FF4848);
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+.getintouch{
+  box-shadow: 0px 0px 10px 10px rgb(131, 122, 122);
+  width: 100%;
+  border-radius: 15px;
+}
+.discuss{
+  margin-right: 10%;
+}
+.cntleft{
+  margin-left: 18%;
+  color: #283753;
+  width: 40%;
+  padding-top: 3%;
+}
+.socialLinks{
+  margin-top: 4%;
+}
+
+.container2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* height: 100vh; */
+  /* background-color: #886893; */
+}
+.card2 {
+  height: 250px;
+  position: relative;
+  width: 300px;
+  perspective: 50cm;
+  border: none;
+}
+.card2-side {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all 1s;
+  border-radius: 15px;
+}
+.card2-side-front {
+  background-image: linear-gradient(to right bottom, #516281, #63687a);
+  color: #ffffff;
+  font-size: 3rem;
+}
+.card2-side-back {
+  background-image: linear-gradient(to right bottom, #516281, #82869e);
+  color: #ffffff;
+  transform: rotateY(-180deg);
+  flex: column;
+}
+.card2:hover .card2-side-front {
+  transform: rotateY(180deg);
+}
+.card2:hover .card2-side-back {
+  transform: rotateY(0);
+}
+

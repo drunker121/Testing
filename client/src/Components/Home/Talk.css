@@ -1,0 +1,26 @@
+.bg{
+	background-color: black;
+}
+.perfect{
+    font-size: 7vh;
+}
+.perfect:hover{
+	color: #244a92;
+}
+.btn:hover{
+	background-color: #244a92;
+}
+.customer{
+	background-color: rgb(52, 56, 59);
+}
+.custext{
+	margin-left: 10%;
+	font-size: 4vh;
+}
+.custext1{
+	margin-left: 10%;
+	font-size: 3vh;
+}
+.hi{
+	margin-left: 10%;
+}
