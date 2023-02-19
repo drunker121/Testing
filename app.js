@@ -20,9 +20,12 @@ mongodb();
 app.use(express.json());
 app.use(require('./router/auth'));
 
-if ( process.env._NODE_ENV === 'production' ) {
-    app.use(express.static('client/build'));
-}
+// if ( process.env._NODE_ENV === 'production' ) {
+//     app.use(express.static('client/build'));
+// }
+
+// "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+// package.json me
 
 app.listen(PORT, () => {
     console.log(`Server is live at port ${PORT}`);
