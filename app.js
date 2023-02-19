@@ -20,6 +20,16 @@ mongodb();
 app.use(express.json());
 app.use(require('./router/auth'));
 
+app.use(express.static(path.join(__dirname, "./client/build")));
+app.length("*" , function(_, res) {
+    res.sendFile(
+        path.join(__dirname, './client/build/index.html'),
+        function (err) {
+            res.status(500).send(err);
+        }
+    );
+});
+
 // if ( process.env._NODE_ENV === 'production' ) {
 //     app.use(express.static('client/build'));
 // }
